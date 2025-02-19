@@ -1,7 +1,6 @@
 package dev.be.api.controller;
 
 import dev.be.api.service.DemoService;
-import dev.be.common.enums.CodeEnum;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,7 +12,6 @@ public class DemoController {
 
     @GetMapping("/save")
     public String save() {
-        System.out.println(CodeEnum.SUCCESS.getCode());
         return demoService.save();
     }
 
