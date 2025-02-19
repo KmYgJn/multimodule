@@ -3,11 +3,12 @@ package dev.be.api;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication (
+		scanBasePackages = { "dev.be.api", "dev.be.common"}
+)
 public class ApiApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ApiApplication.class, args);
 	}
-
 }
