@@ -94,6 +94,6 @@ tasks.jar { enabled = true }
   -> ./gradlew clean :api:buildNeeded --stacktrace --info --refresh-dependencies -x test
 - profile 지정 X
   -> java -jar module-api-0.0.1-SNAPSHOT.jar
-- profile 지정 O
+- profile 지정 O (local로 지정함)
   -> java -jar -Dspring.profiles.active=local module-api-0.0.1-SNAPSHOT.jar
  */
